@@ -1,0 +1,316 @@
+/* =========================================
+   1. UNIVERSAL RESET
+   ========================================= */
+
+/* Remove default spacing and set box sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   2. BODY STYLING
+   ========================================= */
+
+/* Main website background and font */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #141414;
+    color: #ffffff;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   3. MAIN CONTAINER
+   ========================================= */
+
+/* Center the website content */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================================
+   4. HEADER
+   ========================================= */
+
+/* Header layout */
+.header {
+    width: 100%;
+    padding: 25px 8%;
+    background-color: #101010;
+    border-bottom: 1px solid #292929;
+}
+
+/* Netflix brand heading */
+.header h1 {
+    color: #e50914;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Header subtitle */
+.header p {
+    color: #b3b3b3;
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+
+/* =========================================
+   5. MAIN CONTENT
+   ========================================= */
+
+/* Center the form on the page */
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 45px 20px;
+}
+
+
+/* =========================================
+   6. FORM CARD
+   ========================================= */
+
+/* Main form box */
+.form-card {
+    width: 100%;
+    max-width: 550px;
+    background-color: #1f1f1f;
+    padding: 35px;
+    border: 1px solid #333333;
+    border-radius: 14px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+}
+
+/* Form heading */
+.form-card h2 {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+/* Form description */
+.description {
+    color: #aaaaaa;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 28px;
+}
+
+
+/* =========================================
+   7. FORM GROUPS
+   ========================================= */
+
+/* Space between each form field */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+/* Labels above input fields */
+.form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #e5e5e5;
+    margin-bottom: 8px;
+}
+
+
+/* =========================================
+   8. INPUT, SELECT AND TEXTAREA
+   ========================================= */
+
+/* Shared styling for form controls */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 13px 14px;
+    background-color: #2b2b2b;
+    color: #ffffff;
+    border: 1px solid #444444;
+    border-radius: 7px;
+    font-size: 14px;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* Placeholder text */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #999999;
+}
+
+/* Focus effect when user clicks a field */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #e50914;
+    box-shadow: 0 0 0 3px rgba(229, 9, 20, 0.15);
+}
+
+/* Textarea resizing */
+.form-group textarea {
+    resize: vertical;
+    min-height: 110px;
+}
+
+/* Dropdown options */
+.form-group select option {
+    background-color: #2b2b2b;
+    color: #ffffff;
+}
+
+
+/* =========================================
+   9. PREDICT BUTTON
+   ========================================= */
+
+/* Main submit button */
+.predict-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #e50914;
+    color: #ffffff;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease,
+                transform 0.2s ease,
+                box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.predict-btn:hover {
+    background-color: #b80710;
+    box-shadow: 0 5px 15px rgba(229, 9, 20, 0.25);
+    transform: translateY(-2px);
+}
+
+/* Click effect */
+.predict-btn:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   10. PREDICTION RESULT
+   ========================================= */
+
+/* Result display box */
+.result {
+    margin-top: 25px;
+    padding: 18px;
+    background-color: #292929;
+    border: 1px solid #3a3a3a;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Result heading */
+.result h3 {
+    color: #e50914;
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+/* Result text */
+.result p {
+    color: #bdbdbd;
+    font-size: 14px;
+}
+
+
+/* =========================================
+   11. FOOTER
+   ========================================= */
+
+/* Footer section */
+.footer {
+    width: 100%;
+    padding: 20px;
+    background-color: #101010;
+    border-top: 1px solid #292929;
+    text-align: center;
+}
+
+/* Footer text */
+.footer p {
+    color: #888888;
+    font-size: 12px;
+    margin: 3px 0;
+}
+
+
+/* =========================================
+   12. RESPONSIVE DESIGN
+   ========================================= */
+
+/* Styles for small screens such as phones */
+@media (max-width: 600px) {
+
+    /* Smaller header spacing */
+    .header {
+        padding: 20px;
+    }
+
+    /* Smaller brand heading */
+    .header h1 {
+        font-size: 26px;
+    }
+
+    /* Reduce main content spacing */
+    .main-content {
+        padding: 25px 14px;
+        align-items: flex-start;
+    }
+
+    /* Adjust form card for mobile */
+    .form-card {
+        padding: 23px 18px;
+        border-radius: 10px;
+    }
+
+    /* Smaller form heading */
+    .form-card h2 {
+        font-size: 22px;
+    }
+
+    /* Slightly smaller controls */
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    /* Adjust button size */
+    .predict-btn {
+        padding: 13px;
+        font-size: 15px;
+    }
+
+    /* Compact footer */
+    .footer {
+        padding: 15px 10px;
+    }
+}
